@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PLANTAE</string>
+    <string name="title_activity_barra_menu">Barra_menu</string>
+    <string name="title_Home">Home</string>
+    <string name="title_MisPlantas">Mis Plantas</string>
+    <string name="title_Tareas">Tareas</string>
+    <string name="title_Plagas">Plagas</string>
+    <string name="title_Perfil">Perfil</string>
+    <string name="title_activity_viveros">Viveros</string>
+</resources>
+

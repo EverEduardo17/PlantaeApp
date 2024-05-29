@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.uv.app_plantae.ui.home.HomeFragment"
+        android:label="@string/title_Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.uv.app_plantae.ui.dashboard.DashboardFragment"
+        android:label="@string/title_MisPlantas"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.uv.app_plantae.ui.notifications.NotificationsFragment"
+        android:label="@string/title_Tareas"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_plagas"
+        android:name="com.uv.app_plantae.ui.Plagas.Plagas"
+        android:label="@string/title_Plagas"
+        tools:layout="@layout/fragment_plagas" />
+
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.uv.app_plantae.ui.Perfil.Perfil"
+        android:label="@string/title_Perfil"
+        tools:layout="@layout/fragment_ver_perfil" />
+
+</navigation>

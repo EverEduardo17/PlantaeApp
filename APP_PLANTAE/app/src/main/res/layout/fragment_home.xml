@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="30dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toTopOf="@+id/text_home"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/Dato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Dato curioso"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/gris"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titulo_datoDia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Título"
+                        android:textColor="@color/black"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                    <TextView
+                        android:id="@+id/texto_datoDia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:text="Texto" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/Noticias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Noticias"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/gris"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imagen_noticia"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/perfil" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignTop="@id/image_view"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/titulo_noticia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sequia en diferentes parte del pais"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:maxLines="3"
+                            android:ellipsize="end"
+                            android:layout_weight="1"/>
+
+                        <Button
+                            android:id="@+id/ir_noticia"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="@color/naranja"
+                            android:padding="8dp"
+                            android:text="Ver"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/gris"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imagen_noticia2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/perfil" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignTop="@id/image_view"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/titulo_noticia2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sequia en diferentes parte del pais"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:maxLines="3"
+                            android:ellipsize="end"
+                            android:layout_weight="1"
+                            tools:ignore="DuplicateIds" />
+
+                        <Button
+                            android:id="@+id/ir_noticia2"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="@color/naranja"
+                            android:padding="8dp"
+                            android:text="Ver"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/irVivero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/green_btn"
+                android:text="Buscar viveros"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:icon="@drawable/ubicacion1"
+                app:iconSize="40dp"
+                app:iconTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

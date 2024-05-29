@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_Home" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/misplantas"
+        android:title="@string/title_MisPlantas" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/tareas"
+        android:title="Tareas" />
+
+    <item
+        android:id="@+id/navigation_plagas"
+        android:icon="@drawable/plagas"
+        android:title="Plagas" />
+
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@drawable/perfil"
+        android:title="Perfil" />
+
+</menu>
